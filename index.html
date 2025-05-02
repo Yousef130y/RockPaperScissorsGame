@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="message-box" style="display: none; color: #ff4d4d; font-weight: bold;"></div>
+
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <img src="https://cdn-icons-png.flaticon.com/512/1688/1688266.png" alt="Rock Paper Scissors Icon" class="loader-img">
+    <h1>Welcome to Our Game</h1>
+    <div class="dots-loader">
+      <span>.</span><span>.</span><span>.</span>
+    </div>
+  </div>
+
+  <!-- Player Setup Screen -->
+<div id="player-setup" class="hidden">
+  <h2>Choose Your Name Please!</h2>
+  <input type="text" id="player-name" placeholder="Enter your name" />
+  <button id="start-game">Start Game</button>
+</div>
+
+<!-- Main Game Content -->
+<div id="main-content" class="hidden">
+  <h2 id="welcome-text"></h2>
+  <h2>Now the game starts!</h2>
+<!-- Scoreboard -->
+<div class="score-board" id="score-board">
+  <div class="player-info">
+    <div id="user-label" class="badge">Player</div>
+    <div id="user-scored" class="score-number">0</div>
+  </div>
+  <div class="vs-label">VS</div>
+  <div class="player-info">
+    <div id="computer-label" class="badge">Computer</div>
+    <div id="computer-scored" class="score-number">0</div>
+  </div>
+</div>
+
+
+<div class="result">
+  <p id="result"></p>
+</div>
+
+<div class="choices">
+  <div id="rock" class="choice">
+    <lottie-player
+      src="Animation - 1746206693522.json"
+      background="transparent"
+      speed="1"
+      style="width: 100px; height: 100px;"
+      loop
+      autoplay
+    ></lottie-player>
+  </div>
+  
+  <div id="paper" class="choice">
+    <lottie-player
+      src="Animation - 1746206850368.json"
+      background="transparent"
+      speed="1"
+      style="width: 100px; height: 100px;"
+      loop
+      autoplay
+    ></lottie-player>
+  </div>
+  <div id="scissors" class="choice">
+    <lottie-player
+      src="Animation - 1746205721323.json"
+      background="transparent"
+      speed="1"
+      style="width: 100px; height: 100px;"
+      loop
+      autoplay
+    ></lottie-player>
+  </div>
+  <p id="action-message">Make Your Move</p>
+</div>
+
+</div>
+
+
+  <script src="main.js"></script>
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</body>
+</html>
