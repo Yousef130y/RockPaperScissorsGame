@@ -269,3 +269,181 @@ h2 {
     transform: scale(1);
   }
 }
+
+/* Original CSS remains unchanged */
+
+/* Responsive Additions */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .score-board {
+    gap: 20px;
+    padding: 15px 25px;
+    flex-direction: row;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .score-number {
+    font-size: 2rem;
+  }
+  
+  .vs-label {
+    font-size: 1.2rem;
+  }
+  
+  .choices {
+    gap: 15px;
+  }
+  
+  .choice {
+    width: 70px;
+    height: 70px;
+  }
+  
+  #action-message {
+    font-size: 1rem;
+  }
+  
+  #loading-screen h1 {
+    font-size: 1.5rem;
+  }
+  
+  .loader-img {
+    width: 100px;
+  }
+  
+  #message-box {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .score-board {
+    gap: 10px;
+    padding: 10px 15px;
+    width: 95%;
+  }
+  
+  .badge {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .score-number {
+    font-size: 1.8rem;
+  }
+  
+  .vs-label {
+    font-size: 1rem;
+  }
+  
+  .choices {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .choice {
+    width: 60px;
+    height: 60px;
+  }
+  
+  #action-message {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 20px 10px;
+  }
+  
+  #player-setup input[type="text"] {
+    width: 220px;
+    padding: 8px;
+  }
+  
+  #start-game {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  #loading-screen h1 {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+  
+  .dots-loader span {
+    font-size: 1.5rem;
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 320px) {
+  .score-board {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .vs-label {
+    margin: 5px 0;
+  }
+  
+  .choice {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .choice img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* For landscape orientation on mobile */
+@media screen and (max-height: 500px) {
+  body {
+    padding: 10px 0;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .score-board {
+    margin-top: 10px;
+  }
+  
+  .choices {
+    margin-top: 10px;
+  }
+  
+  #action-message {
+    margin-top: 10px;
+  }
+}
+
+/* Fix for device height on small screens */
+@media screen and (max-height: 600px) {
+  #player-setup {
+    padding: 20px 0;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  #loading-screen {
+    padding: 20px;
+  }
+}
+
+/* Ensure fonts scale well on high-DPI devices */
+html {
+  -webkit-text-size-adjust: 100%;
+}
